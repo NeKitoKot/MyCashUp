@@ -1,0 +1,175 @@
+html 
+  font-size: 62.5%
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+body
+  margin: 0
+  padding: 0
+  background-color: #2a2d31
+
+*
+  box-sizing: border-box
+
+.container  
+  width: 1100px
+  margin: 0 auto
+   
+.header 
+  display: flex
+  justify-content: space-between
+  &_logo-wrap
+    display: flex
+    text-decoration: none    
+  &_logo 
+    background-color: #fc3c3c
+    padding: 20px 15px
+  &_logo-text
+    font-size: 3rem
+    line-height: 1em
+    padding: 20px 40px 20px 15px
+    background-color: #35393e
+    color: #fff
+  &_login-wrap
+    position: relative
+    &:hover
+      transition: 0.5s
+      .header_login-reg        
+        opacity: 1 
+        transform: translateY(0px)
+        visibility: visible
+  &_login
+    padding: 30px 60px
+    position: relative
+    transition: 0.3s
+    &:after
+      content: ''
+      position: absolute
+      background-image: url(../img/down.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      bottom: 6px
+      left: calc(50% - 20px/2)
+      width: 20px
+      height: 15px
+      transition: 0.3s
+      transform: translateY(-10px)
+      opacity: 0
+    &:hover
+      transition: 0.3s
+      background-color: #00adb5
+      &:after
+        opacity: 1
+        transform: translateY(0px)
+.header_login-reg
+  position: absolute
+  width: 220px
+  top: 93px
+  left: calc(50% - 220px/2)
+  background-color: #fff
+  text-align: center
+  opacity: 0 
+  transform: translateY(20px)
+  transition: 0.5s  
+  visibility: hidden
+  &_title
+    font-size: 1.6rem
+    padding: 10px 0 
+    background-color: #00adb5
+    color: #fff
+  &_form
+    padding: 15px 30px
+    height: 250px
+    form  
+      input
+        border: none
+        background-color: #ebebeb
+        font-family: 'Yanone Kaffeesatz', sans-serif
+        font-size: 1.6rem
+        line-height: 3rem
+        margin-bottom: 15px
+        padding: 0 15px 
+        width: 100%
+      button
+        background-color: #00adb5
+        font-size: 1.6rem
+        line-height: 3rem 
+        padding: 0 20px 
+        font-family: 'Yanone Kaffeesatz', sans-serif
+        border: none
+        color: #fff
+        &:hover
+          cursor: pointer
+  &_link
+    padding: 0 40px
+    width: unset
+    display: flex
+    justify-content: flex-end
+    a
+      font-size: 1.6rem
+      line-height: 3rem
+      background-color: #00adb5
+      color: #fff
+      font-family: 'Yanone Kaffeesatz', sans-serif
+      texe-decoration: none
+      display: block
+      width: -moz-fit-content 
+      margin-bottom: 15px
+      position: relative
+      padding: 0 10px
+      border-radius: 0px
+      text-decoration: none
+      &:after
+        content: ''
+        position: absolute
+        border: 15px solid transparent
+        border-left-color: #00adb5
+        top: 0
+        right: -30px
+
+.tblock
+  &-wrap
+    padding: 30px 0
+    display: flex
+    justify-content: space-between
+  &-item
+    width: 30%
+    padding: 20px 0px
+  &_heading
+    font-size: 1.6rem
+    line-height: 1.2em
+    text-align: center
+
+
+.item
+  font-size: 1.6rem
+  line-height: 1.2em
+  &-top
+    background-color: #fc3c3c
+    color: #fff
+  &-top_place
+    background-color: #c93030
+    padding: 5px 35px 5px 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:nth-child(2n+1)
+      background-color: #fc3c3c
+    &:nth-child(3)
+      .img-wrap
+        img
+          width: 90%
+    &:nth-child(4)
+      .img-wrap
+        img
+          width: 80%
+            
+    .img-wrap
+      width: 40px
+      text-align: center    
+
+.img-wrap
+  img
+    width: 100%
+    height: auto
+
