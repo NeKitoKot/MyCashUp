@@ -8,6 +8,12 @@
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&amp;subset=cyrillic" rel="stylesheet"> 
   <link rel="stylesheet" href="assets/css/main.css">
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+  <script src="assets/js/scripts.js" defer ></script>
+
  
 </head>
 <body>
@@ -26,7 +32,7 @@
         <div class=" header_login">
           <img src="assets/img/loginIcon.png" alt="">
         </div>
-        <div class="header_login-reg">
+        <!-- <div class="header_login-reg">
           <div class="header_login-reg_title">
             Вход
           </div>
@@ -40,6 +46,28 @@
           <div class="header_login-reg_link">
             <a href="#">Регистрация</a>
           </div>
+        </div> -->
+        <div class="header_login-ligined">
+          <div class="header_login-ligined-row profile">
+            <img src="assets/img/pen.png" alt="">
+            <div>Профиль:</div>
+            <div class="profile_name">
+              Player322
+            </div>
+          </div>
+          <div class="header_login-ligined-row balance">
+            <img src="assets/img/money-bag.png" alt="">
+            <div>Баланс:</div>
+            <div class="balance_value">1000.00</div>
+          </div>
+          <div class="header_login-ligined-row rate">
+            <img src="assets/img/star-profile.png" alt="">
+            <div>Рейтинг:</div>
+            <div class="rate_value">200</div>
+          </div>
+          <button class="logout">
+            <img src="assets/img/power-signal.png" alt="">
+          </button>
         </div>
       </div>
     </div>
@@ -99,8 +127,130 @@
             </div>
           </div>
       </div>
+      <div class="tblock-item item item-lobby">
+        <div class="tblock_heading">
+          Топ игроков
+        </div>
+        <a href="#" class="item-lobby_room">
+          <div class="item-lobby_name">
+            lobby-name 
+          </div>
+          <div class="item-lobby_type">
+            5 в ряд
+          </div>
+          <div class="item-lobby_key">
+            <img src="assets/img/key.png" alt="">
+          </div>
+          <div class="item-lobby_bet">
+            1500
+          </div>
+          <div class="item-lobby_join">
+            <img src="assets/img/join.png" alt="">
+          </div>
+          <div class="item-lobby_time">
+            00:00:00
+          </div>
+        </a>
+        <a href="#" class="item-lobby_room">
+          <div class="item-lobby_name">
+            lobby-name 
+          </div>
+          <div class="item-lobby_type">
+            5 в ряд
+          </div>
+          <div class="item-lobby_key">
+            <img src="assets/img/key.png" alt="">
+          </div>
+          <div class="item-lobby_bet">
+            1500
+          </div>
+          <div class="item-lobby_join">
+            <img src="assets/img/join.png" alt="">
+          </div>
+          <div class="item-lobby_time">
+            00:00:00
+          </div>
+        </a>
+        <a href="#" class="item-lobby_room">
+          <div class="item-lobby_name">
+            lobby-name 
+          </div>
+          <div class="item-lobby_type">
+            5 в ряд
+          </div>
+          <div class="item-lobby_key">
+            <img src="assets/img/key.png" alt="">
+          </div>
+          <div class="item-lobby_bet">
+            1500
+          </div>
+          <div class="item-lobby_join">
+            <img src="assets/img/join.png" alt="">
+          </div>
+          <div class="item-lobby_time">
+            00:00:00
+          </div>
+        </a>
+      </div>
+      <div class="tblock-item item item-create">
+        <div class="tblock_heading">
+          Создать лобби
+        </div>
+        <form action="">
+          <div class="item-create-row">
+            <select name="" id="">
+              <option value="">5 в ряд</option>
+              <option value="">Шашки</option>
+            </select>
+          </div>
+          <div class="item-create-row">
+            <input type="text" placeholder="Пароль (?)">
+          </div>
+          <div class="item-create-row item-create-bet">
+            <input type="text" placeholder="Ставка (20р минимум)">
+          </div>
+          <div class="item-create-row">
+            <a href="#" class="btn">Создать</a>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-  <script src="assets/js/scripts.js" defer ></script>
+  <div class="container">
+    <div class="stream">
+      <div class="stream-container">
+        <img src="https://via.placeholder.com/920x545" alt="">
+      </div>
+      <div class="stream-controls">
+        <div class="light"><img src="assets/img/Lamp-on.png" alt=""></div>
+        <button class="btn btn-red">Смотреть случайную игру</button>
+        <button class="refresh"></button>
+        <div class="findgame">
+          <button class="btn btn-blue">Найти случайную игру</button>
+          <form action="">
+            <button class="btn btn-blue">Со ставкой менее чем</button>
+            <input type="number">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Обратная связь</a>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
