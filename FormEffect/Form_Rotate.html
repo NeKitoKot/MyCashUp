@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Magic/magic.css">
+  <link rel="stylesheet" href="css/enterRegisterForm.css">
+  <script src="Js/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="mainFormBlock">
+    <div id="enterFormBlock">
+      <div id="backSideBlock">
+        
+      </div>
+      <div class="enterFormHeader">
+        <div class="enterFormHeaderTitle">Вход</div>
+      </div>
+        <hr class="enterFormHeaderLine">
+      
+      <form action="#" method="POST">
+        <input type="login" class="enterRegisterInput" placeholder="Логин или Email">
+        <input type="pass" class="enterRegisterInput" placeholder="Пароль">
+        <input type="submit" value="Войти" class="enterButton">
+      </form>
+      <div id="registerLinkBlock"><a href="#" class="registerLink" id="registerLink">Регистрация</a></div>
+    </div>
+
+
+    <div id="registerFormBlock">
+
+      <div class="registerFormHeader">
+        <div class="registerFormHeaderTitle">Регистрация</div>
+      </div>
+        <hr class="enterFormHeaderLine">
+      
+      <form action="#" method="POST">
+        <input type="login" class="enterRegisterInput" placeholder="Логин">
+        <input type="login" class="enterRegisterInput" placeholder="Email">
+        <input type="pass" class="enterRegisterInput" placeholder="Пароль">
+        <input type="pass" class="enterRegisterInput" placeholder="Повторите">
+        <input type="submit" value="Отправить" class="registerButton">
+      </form>
+      <div id="enterLinkBlock"><a href="#" class="registerLink" id="enterLink">Вход</a></div>
+    </div>
+  </div>
+      <script>
+        $('#registerLink').click(function(){
+          $("#enterFormBlock").removeClass('perspectiveLeftReturn');
+          $("#enterFormBlock").addClass('magictime perspectiveLeft');
+          $('#backSideBlock').fadeIn(700);});
+
+        $('#enterLink').click(function(){
+          $("#enterFormBlock").removeClass('perspectiveLeft');
+          $("#enterFormBlock").addClass('magictime perspectiveLeftReturn');
+          $('#backSideBlock').fadeOut(700);});
+      </script>
+</body>
+</html>

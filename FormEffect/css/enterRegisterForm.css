@@ -1,0 +1,164 @@
+@font-face
+    {
+      font-family: Yanone Kaffeesatz; /* Гарнитура шрифта */
+      src: url(../Font/YanoneKaffeesatz-Regular.ttf); /* Путь к файлу со шрифтом */
+    }
+*
+  {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+#mainFormBlock
+  {
+    margin: auto;
+    margin-top: 100px;
+    width: 220px;
+    height: 320px;
+  }
+
+    body{background-color: #fff;}
+
+    #enterFormBlock
+    {
+      background-color: #00adb5;
+      width: 220px;
+      height: 320px;
+      z-index: 1;
+      position: relative;
+
+    }
+
+    #registerFormBlock
+    {
+      background-color: #f8b500;
+      width: 220px;
+      height: 320px;
+      position: relative;
+      bottom: 320px;
+      z-index: 0;
+    }
+    
+    .enterFormHeader, .registerFormHeader{
+      width: 220px;
+      height: 45px;
+    }
+
+    .enterFormHeaderTitle
+    {
+      font-size: 16px;
+      color: #FFF;
+      font-family: Yanone Kaffeesatz;
+      position: relative;
+      top: 16px;
+      left: 95px;
+    }
+    .registerFormHeaderTitle
+    {
+      font-size: 16px;
+      color: #FFF;
+      font-family: Yanone Kaffeesatz;
+      position: relative;
+      top: 16px;
+      margin-left:78px;
+    }
+
+    .enterRegisterInput
+    {
+      height: 30px;
+      width: 145px;
+      margin: auto;
+      margin-top: 15px;
+      border: none;
+      margin-left: 30px;
+      font-family: Yanone Kaffeesatz;
+      padding-left: 15px;
+    }
+    .enterButton
+    {
+      font-family: Yanone Kaffeesatz;
+      font-size: 16px;
+      transition: 0.2s;
+      height: 30px;
+      width: 80px;
+      margin-top: 15px;
+      margin-left:70px;
+      color: #FFF;
+      border: none;
+      background-color: #00adb5;
+    }
+    .registerButton
+    {
+      font-family: Yanone Kaffeesatz;
+      font-size: 16px;
+      transition: 0.2s;
+      height: 30px;
+      width: 80px;
+      margin-top: 15px;
+      margin-left:70px;
+      color: #FFF;
+      border: none;
+      background-color: #f8b500;
+    }
+
+    .enterButton:hover
+    {
+      transition: 0.2s;
+      color: #00adb5;
+      background-color: #FFF;
+    }
+    
+    .registerButton:hover
+    {
+      transition: 0.2s;
+      color: #f8b500;
+      background-color: #FFF;
+    }
+
+    #registerLinkBlock
+    {
+      width: 77px;
+      float: right;
+      position: relative;
+      top: 65px;
+    }
+    #enterLinkBlock{
+      width: 77px;
+      float: right;
+      position: relative;
+      top: 15px;
+      left: 38px;
+    }
+    .registerLink
+    {
+      transition: 0.2s;
+      font-family: Yanone Kaffeesatz;
+      font-size: 16px;
+      color: #FFF;
+      text-decoration: none;
+      text-align: right;
+    }
+    .registerLink:hover
+    {
+      transition: 0.2s;
+      text-decoration: underline;
+    }
+
+    .enterFormHeaderLine
+    {
+      height: 1px;
+      background-color:#FFF;
+      border: none;
+      width: 190px;
+      margin-left: 15px;
+
+    }
+    #backSideBlock
+    {
+      position: absolute;
+      background-color: #00adb5;
+      width: 220px;
+      height: 320px;
+      z-index: 2;
+      display: none;
+    }
