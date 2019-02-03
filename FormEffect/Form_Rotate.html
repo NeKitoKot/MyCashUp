@@ -14,7 +14,16 @@
   <div id="mainFormBlock">
     <div id="enterFormBlock">
       <div id="backSideBlock">
-        
+        <ul id="backSideBlockText">
+          <li>Придумайте ваш уникальный логин и введите его в первое поле.</li>
+          <br>
+          <li>Во второе поле введите ваш адрес электронной почты.</li>
+          <br>
+          <li>В третье поле введите ваш пароль <br>(6 символов минимум) <br> И повторите пароль
+          в четвёртом поле.</li>
+          <br>
+          <li>После нажмите кнопку Отправить.</li>
+        </ul>
       </div>
       <div class="enterFormHeader">
         <div class="enterFormHeaderTitle">Вход</div>
@@ -41,7 +50,7 @@
         <input type="login" class="enterRegisterInput" placeholder="Логин">
         <input type="login" class="enterRegisterInput" placeholder="Email">
         <input type="pass" class="enterRegisterInput" placeholder="Пароль">
-        <input type="pass" class="enterRegisterInput" placeholder="Повторите">
+        <input type="pass" class="enterRegisterInput" placeholder="Повторите Пароль">
         <input type="submit" value="Отправить" class="registerButton">
       </form>
       <div id="enterLinkBlock"><a href="#" class="registerLink" id="enterLink">Вход</a></div>
@@ -51,12 +60,12 @@
         $('#registerLink').click(function(){
           $("#enterFormBlock").removeClass('perspectiveLeftReturn');
           $("#enterFormBlock").addClass('magictime perspectiveLeft');
-          $('#backSideBlock').fadeIn(700);});
+          $('#backSideBlock').fadeIn(600);});
 
         $('#enterLink').click(function(){
           $("#enterFormBlock").removeClass('perspectiveLeft');
           $("#enterFormBlock").addClass('magictime perspectiveLeftReturn');
-          $('#backSideBlock').fadeOut(700);});
+          $('#backSideBlock').fadeOut(600);});
       </script>
 </body>
 </html>

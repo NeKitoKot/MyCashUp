@@ -120,13 +120,13 @@
       width: 77px;
       float: right;
       position: relative;
-      top: 65px;
+      top: 105px;
     }
     #enterLinkBlock{
       width: 77px;
       float: right;
       position: relative;
-      top: 15px;
+      top: 20px;
       left: 38px;
     }
     .registerLink
@@ -161,4 +161,21 @@
       height: 320px;
       z-index: 2;
       display: none;
+      padding-left: 15px;
     }
+
+    #backSideBlockText
+    {
+      transform: rotateY(180deg);
+      color: #FFF;
+      font-family: Yanone Kaffeesatz;
+      font-size: 14px;
+      width: 200px;
+      margin-top: 62px;
+    }
+    li
+    {
+      list-style-type: none;
+    }
+
+    #backSideBlockText>li:last-child{margin-top: 38px;}
