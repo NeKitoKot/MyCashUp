@@ -103,139 +103,19 @@ body {
 }
 
 .header_login-ligined {
-  background-color: #fff;
-  min-height: 300px;
   position: relative;
-}
-
-.header_login-ligined-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #00959b;
-  padding: 10px 10px 0 10px;
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-.header_login-ligined-row div {
-  width: 33%;
-}
-
-.header_login-ligined-row img {
-  margin-right: 5px;
-  width: 10%;
-}
-
-.header_login-ligined-row:nth-child(2n+1) {
-  background-color: #00adb5;
-}
-
-.header_login-ligined .logout {
-  background-color: #fc3c3c;
-  text-align: center;
-  padding: 3px 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  border: none;
-}
-
-.header_login-ligined .logout:hover {
-  cursor: pointer;
 }
 
 .header_login-reg, .header_login-ligined {
   position: absolute;
-  width: 220px;
   top: 93px;
   left: calc(50% - 220px/2);
-  background-color: #fff;
-  text-align: center;
   opacity: 0;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   visibility: hidden;
-}
-
-.header_login-reg_title, .header_login-ligined_title {
-  font-size: 1.6rem;
-  padding: 10px 0;
-  background-color: #00adb5;
-  color: #fff;
-}
-
-.header_login-reg_form, .header_login-ligined_form {
-  padding: 15px 30px;
-  height: 250px;
-}
-
-.header_login-reg_form form input, .header_login-ligined_form form input {
-  border: none;
-  background-color: #ebebeb;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  width: 100%;
-}
-
-.header_login-reg_form form button, .header_login-ligined_form form button {
-  background-color: #00adb5;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  padding: 0 20px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  border: none;
-  color: #fff;
-}
-
-.header_login-reg_form form button:hover, .header_login-ligined_form form button:hover {
-  cursor: pointer;
-}
-
-.header_login-reg_link, .header_login-ligined_link {
-  padding: 0 40px;
-  width: unset;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.header_login-reg_link a, .header_login-ligined_link a {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  background-color: #00adb5;
-  color: #fff;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  texe-decoration: none;
-  display: block;
-  width: -moz-fit-content;
-  margin-bottom: 15px;
-  position: relative;
-  padding: 0 10px;
-  border-radius: 0px;
-  text-decoration: none;
-}
-
-.header_login-reg_link a:after, .header_login-ligined_link a:after {
-  content: '';
-  position: absolute;
-  border: 15px solid transparent;
-  border-left-color: #00adb5;
-  top: 0;
-  right: -30px;
 }
 
 .tblock-wrap {
@@ -446,6 +326,7 @@ button {
   line-height: 2em;
   border: none;
   color: #fff;
+  padding: 0 5px;
 }
 
 .stream-controls .btn:hover {

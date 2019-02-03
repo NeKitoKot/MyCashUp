@@ -7,6 +7,8 @@
   <title>My Cash Up</title>
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&amp;subset=cyrillic" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/enterRegisterForm.css">
+  <link rel="stylesheet" href="assets/css/magic.css">  
   <link rel="stylesheet" href="assets/css/main.css">
   <script
 			  src="https://code.jquery.com/jquery-3.3.1.js"
@@ -32,6 +34,51 @@
         <div class=" header_login">
           <img src="assets/img/loginIcon.png" alt="">
         </div>
+        <div id="mainFormBlock " class="header_login-ligined">
+          <div id="enterFormBlock">
+            <div id="backSideBlock">
+              <ul id="backSideBlockText">
+                <li>Придумайте ваш уникальный логин и введите его в первое поле.</li>
+                <br>
+                <li>Во второе поле введите ваш адрес электронной почты.</li>
+                <br>
+                <li>В третье поле введите ваш пароль <br>(6 символов минимум) <br> И повторите пароль
+                в четвёртом поле.</li>
+                <br>
+                <li>После нажмите кнопку Отправить.</li>
+              </ul>
+            </div>
+            <div class="enterFormHeader">
+              <div class="enterFormHeaderTitle">Вход</div>
+            </div>
+              <hr class="enterFormHeaderLine">
+            
+            <form action="#" method="POST">
+              <input type="login" class="enterRegisterInput" placeholder="Логин или Email">
+              <input type="pass" class="enterRegisterInput" placeholder="Пароль">
+              <input type="submit" value="Войти" class="enterButton">
+            </form>
+            <div id="registerLinkBlock"><a href="#" class="registerLink" id="registerLink">Регистрация</a></div>
+          </div>
+
+
+          <div id="registerFormBlock">
+
+            <div class="registerFormHeader">
+              <div class="registerFormHeaderTitle">Регистрация</div>
+            </div>
+              <hr class="enterFormHeaderLine">
+            
+            <form action="#" method="POST">
+              <input type="login" class="enterRegisterInput" placeholder="Логин">
+              <input type="login" class="enterRegisterInput" placeholder="Email">
+              <input type="pass" class="enterRegisterInput" placeholder="Пароль">
+              <input type="pass" class="enterRegisterInput" placeholder="Повторите Пароль">
+              <input type="submit" value="Отправить" class="registerButton">
+            </form>
+            <div id="enterLinkBlock"><a href="#" class="registerLink" id="enterLink">Вход</a></div>
+          </div>
+        </div>
         <!-- <div class="header_login-reg">
           <div class="header_login-reg_title">
             Вход
@@ -47,7 +94,7 @@
             <a href="#">Регистрация</a>
           </div>
         </div> -->
-        <div class="header_login-ligined">
+        <!-- <div class="header_login-ligined">
           <div class="header_login-ligined-row profile">
             <img src="assets/img/pen.png" alt="">
             <div>Профиль:</div>
@@ -68,7 +115,7 @@
           <button class="logout">
             <img src="assets/img/power-signal.png" alt="">
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
