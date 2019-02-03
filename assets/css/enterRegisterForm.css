@@ -13,13 +13,13 @@
   {
     width: 220px;
     height: 320px;
-    border:1px solid #FFF;
   }
 
     body{background-color: #fff;}
 
     #enterFormBlock
     {
+    border:1px solid #FFF;
       background-color: #00adb5;
       width: 220px;
       height: 320px;
