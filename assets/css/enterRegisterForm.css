@@ -13,6 +13,8 @@
   {
     width: 220px;
     height: 320px;
+    -webkit-box-shadow: 0 0 6px 2px #A3A3A3;
+    box-shadow: 0 0 6px 2px #A3A3A3;
   }
 
     body{background-color: #fff;}
@@ -178,4 +180,4 @@
       list-style-type: none;
     }
 
-    #backSideBlockText>li:last-child{margin-top: 38px;}
+    #backSideBlockText>li:last-child{margin-top: 18px;}
